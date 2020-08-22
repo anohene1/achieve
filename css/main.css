@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy-Regular;
+  box-sizing: content-box;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+header p {
+  margin: 0;
+}
+header p .red {
+  color: red;
+  font-weight: bold;
+}
+header nav ul {
+  margin-top: 10px;
+  list-style: none;
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+header nav ul li {
+  display: inline;
+  padding: 0 10px;
+}
+header nav ul .button {
+  background-color: red;
+  height: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#landing {
+  text-align: center;
+  margin-top: 150px;
+  display: grid;
+  place-items: center;
+}
+#landing p {
+  font-size: 1.5rem;
+}
+#landing h1 {
+  font-size: 4.5rem;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#landing h2 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+#landing .email-box {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  padding: 5px;
+}
+#landing .email-box input[type=email] {
+  border: none;
+  height: 50px;
+  width: 400px;
+  font-size: 1rem;
+  font-family: Gilroy-Regular;
+  padding: 0;
+}
+#landing .email-box .go {
+  float: right;
+  height: 50px;
+  background-color: red;
+  display: grid;
+  place-items: center;
+  width: 70px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#case-study-area {
+  padding: 80px;
+}
+#case-study-area h3 {
+  margin: 0;
+  font-family: Gilroy-Bold;
+  font-size: 1.5rem;
+}
+#case-study-area .line {
+  height: 3px;
+  width: 50px;
+  background-color: red;
+}
+#case-study-area .case-card-container {
+  display: grid;
+  grid-gap: 35px;
+  margin-top: 90px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+#case-study-area .case-card-container .case-card {
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  transition: all 0.7s;
+}
+#case-study-area .case-card-container .case-card .case-card-title {
+  text-transform: uppercase;
+  color: gray;
+  margin: 0;
+}
+#case-study-area .case-card-container .case-card .case-card-heading {
+  font-family: Gilroy-Bold;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+#case-study-area .case-card-container .case-card .case-card-body {
+  margin: 40px 0;
+}
+#case-study-area .case-card-container .case-card a {
+  color: gray;
+  text-decoration: none;
+}
+#case-study-area .case-card-container .case-card:hover {
+  background-color: black;
+  color: white;
+}
+
+#consult-area {
+  padding: 80px;
+}
+#consult-area .consult-area-intro {
+  display: flex;
+  align-items: center;
+}
+#consult-area .consult-area-intro h3 {
+  color: gray;
+  margin: 0;
+  font-family: Gilroy-Bold;
+}
+#consult-area .consult-area-intro .line {
+  height: 1px;
+  width: 400px;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: 10px;
+}
+#consult-area .consult-area-intro a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: Gilroy-Regular;
+}
+#consult-area .consult-area-heading {
+  width: 30%;
+  font-size: 2rem;
+  font-family: Gilroy-Bold;
+}
+#consult-area .consult-card-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+#consult-area .consult-card-container .consult-card img {
+  height: 100%;
+  width: 100%;
+}
+#consult-area .consult-card-container .consult-card .consult-card-title {
+  color: gray;
+  text-transform: uppercase;
+}
+#consult-area .consult-card-container .consult-card .consult-card-body {
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+#consult-area .consult-card-container .consult-card a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: Gilroy-Regular;
+}
+
+#business-agency-area {
+  background-color: black;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+#business-agency-area .info {
+  width: 45%;
+  margin-left: 80px;
+}
+#business-agency-area .info h3 {
+  color: gray;
+  font-family: Gilroy-Regular;
+  font-size: 2rem;
+}
+#business-agency-area .info h1 {
+  color: white;
+  font-family: Gilroy-Bold;
+  font-size: 3rem;
+  margin: 70px 0;
+}
+#business-agency-area .info p {
+  color: gray;
+  font-size: 1.2rem;
+}
+#business-agency-area .img {
+  position: absolute;
+  right: 0;
+}
+#business-agency-area img {
+  height: 65%;
+  width: 75%;
+  float: right;
+}
+
+#lol {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */

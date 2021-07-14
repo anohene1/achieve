@@ -37,6 +37,7 @@ header nav ul .button {
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  outline: none;
 }
 
 #landing {
@@ -72,6 +73,7 @@ header nav ul .button {
   font-size: 1rem;
   font-family: Gilroy-Regular;
   padding: 0;
+  outline: none;
 }
 #landing .email-box .go {
   float: right;
@@ -85,6 +87,7 @@ header nav ul .button {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  outline: none;
 }
 
 #case-study-area {
